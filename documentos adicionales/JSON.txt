@@ -1,0 +1,79 @@
+//********** USUARIOS  *********//
+{
+	"Carnet": int(9),
+	"Nombres": string(64),
+	"Apellidos": string(64),
+	"Password": string(64),
+	"Correo": string(64,
+}
+
+
+//********** CURSOS  *********//
+{
+	"CodigoCurso": int,
+	"Nombres": string(64)
+}
+
+
+//********** PUBLICACIONES  *********//
+//Los codigos de curso y catedratico, se los proporciono cuando el cliente pide la lista de los mismos.
+{
+	"Carnet": int(9),
+	"CodigoCurso": int,
+	"CodigoCatedratico": int,
+	"IdSeccion": string(20), //CodigoCurso_Seccion
+	"Mensaje": string(256),
+	"Fecha": date,
+	"Tipo": int (1 positivo, 0 negativo)
+}
+
+
+//********** CARRERAS  *********//
+{
+	"IdCarrera": int(2),
+	"Nombre": string(64)
+}
+
+
+//********** PENSUMS  *********//
+//Los codigos de curso y carrera, se los proporciono cuando el cliente pide la lista de los mismos.
+{
+	"IdCarrera": int(2),
+	"CodigoCurso": int,
+	"Creditos": int,
+	"Semestre": int
+}
+
+
+//********** CURSOS APROBADOS  *********//
+//El codigo del curso se los proporciono cuando el cliente pide la lista de los mismos.
+{
+	"CodigoCurso": int,
+	"Carnet": int(9),
+	"Nota": int
+}
+
+
+//********** COMENTARIOS  *********//
+//El codigo de la publicacion se los proporciono cuando el cliente pide la lista de los mismos.
+{
+	"IdPublicacion": int,
+	"Carnet": int(9),
+	"Mensaje": string(256)
+}
+
+
+//********** CATEDRATICOS  *********//
+{
+	"Nombres": string(64),
+	"Apellidos": string(64)
+}
+
+
+//********** SECCIONES  *********//
+//Los codigos de curso y catedratico se los proporciono cuando el cliente pide la lista de los mismos.
+{
+	"CodigoCurso": int,
+	"CodigoCatedratico": int,
+	"Seccion": string(2)
+}
