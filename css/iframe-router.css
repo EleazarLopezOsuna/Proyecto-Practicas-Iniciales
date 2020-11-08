@@ -1,0 +1,10 @@
+#IFbody{
+	position: relative;
+	width: 100%;
+	height: 75vh;
+	border: 0;
+}
+
+.frame-body{
+	background-color: #f8f9fc;
+}

@@ -4,7 +4,7 @@
 	"Nombres": string(64),
 	"Apellidos": string(64),
 	"Password": string(64),
-	"Correo": string(64,
+	"Correo": string(64),
 }
 
 
