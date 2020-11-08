@@ -67,7 +67,7 @@ INSERT INTO Cursos (CodigoCurso, Nombre) VALUES (729, "Modelacion y Simulacion 1
 INSERT INTO Cursos (CodigoCurso, Nombre) VALUES (786, "Sistemas Organizacionales y Gerenciales 1");
 INSERT INTO Cursos (CodigoCurso, Nombre) VALUES (972, "Inteligencia Artificial 1");
 INSERT INTO Cursos (CodigoCurso, Nombre) VALUES (966, "Seguridad y Auditorias de Redes");
-INSERT INTO Cursos (CodigoCurso, Nombre) VALUES (785, "Analisis y Diseño de Sistemas");
+INSERT INTO Cursos (CodigoCurso, Nombre) VALUES (785, "Analisis y Diseño de Sistemas 2");
 INSERT INTO Cursos (CodigoCurso, Nombre) VALUES (788, "Sistemas Aplicados 1");
 INSERT INTO Cursos (CodigoCurso, Nombre) VALUES (738, "Bases de Datos Avanzadas");
 INSERT INTO Cursos (CodigoCurso, Nombre) VALUES (798, "Seminario de Sistemas 2");

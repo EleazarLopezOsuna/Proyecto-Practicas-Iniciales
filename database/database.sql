@@ -138,9 +138,6 @@ CREATE TABLE Pensums
 CREATE INDEX IX_Relationship11 ON Pensums (CodigoCurso)
 ;
 
-ALTER TABLE Pensums ADD PRIMARY KEY (IdCarrera)
-;
-
 -- Table Carreras
 
 CREATE TABLE Carreras
@@ -190,5 +187,3 @@ ALTER TABLE CursosAprobados ADD CONSTRAINT Relationship18 FOREIGN KEY (CodigoCur
 
 ALTER TABLE Pensums ADD CONSTRAINT Relationship19 FOREIGN KEY (IdCarrera) REFERENCES Carreras (IdCarrera) 
 ;
-
-
