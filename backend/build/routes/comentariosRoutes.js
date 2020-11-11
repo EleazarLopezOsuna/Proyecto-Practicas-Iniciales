@@ -12,7 +12,8 @@ class ComentariosRoutes {
     }
     config() {
         this.router.get('/', comentariosController_1.default.list);
-        this.router.get('/:id', comentariosController_1.default.getOne);
+        this.router.get('/Usuario/:id', comentariosController_1.default.getUsuario);
+        this.router.get('/Publicacion/:id', comentariosController_1.default.getPublicacion);
         this.router.post('/', comentariosController_1.default.create);
         this.router.put('/:id', comentariosController_1.default.update);
         this.router.delete('/:id', comentariosController_1.default.delete);

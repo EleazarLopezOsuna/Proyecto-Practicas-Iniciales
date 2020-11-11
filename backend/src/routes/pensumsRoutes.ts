@@ -11,10 +11,10 @@ class PensumsRoutes{
 
     config(): void{
         this.router.get('/', pensumsController.list);
-        this.router.get('/:id', pensumsController.getOne);
+        this.router.get('/:id/:cod', pensumsController.getOne);
         this.router.post('/', pensumsController.create);
-        this.router.put('/:id', pensumsController.update);
-        this.router.delete('/:id', pensumsController.delete);
+        this.router.put('/:id/:cod', pensumsController.update);
+        this.router.delete('/:id/:cod', pensumsController.delete);
     }
 }
 

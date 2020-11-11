@@ -12,10 +12,10 @@ class CatedraticosRoutes {
     }
     config() {
         this.router.get('/', catedraticosController_1.default.list);
-        this.router.get('/:id', catedraticosController_1.default.getOne);
+        this.router.get('/:nombre/:apellido', catedraticosController_1.default.getOne);
         this.router.post('/', catedraticosController_1.default.create);
-        this.router.put('/:id', catedraticosController_1.default.update);
-        this.router.delete('/:id', catedraticosController_1.default.delete);
+        this.router.put('/:nombre/:apellido', catedraticosController_1.default.update);
+        this.router.delete('/:nombre/:apellido', catedraticosController_1.default.delete);
     }
 }
 const catedraticosRoutes = new CatedraticosRoutes();

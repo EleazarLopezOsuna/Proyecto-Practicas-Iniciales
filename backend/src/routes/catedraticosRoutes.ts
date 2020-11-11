@@ -11,10 +11,10 @@ class CatedraticosRoutes{
 
     config(): void{
         this.router.get('/', catedraticosController.list);
-        this.router.get('/:id', catedraticosController.getOne);
+        this.router.get('/:nombre/:apellido', catedraticosController.getOne);
         this.router.post('/', catedraticosController.create);
-        this.router.put('/:id', catedraticosController.update);
-        this.router.delete('/:id', catedraticosController.delete);
+        this.router.put('/:nombre/:apellido', catedraticosController.update);
+        this.router.delete('/:nombre/:apellido', catedraticosController.delete);
     }
 }
 

@@ -59,6 +59,23 @@ class UsuariosController{
         }
     }
 
+    public async login (req: Request, res: Response): Promise<any>{
+        const { pw } = req.params;
+        const { id } = req.params;
+
+        const usuario = await pool.query('SELECT * FROM Usuarios WHERE Carnet = ?', [id]);
+
+        if(usuario.length > 0){
+            if(usuario[0].Password == pw){
+                res.json({Text: 'Datos Correctos'});
+            }else{
+                res.status(404).json({Text: "Datos erroneos"})
+            }
+        }else{
+            res.status(404).json({Text: "El usuario no existe"})
+        }
+    }
+
 }
 
 const usuariosController = new UsuariosController();

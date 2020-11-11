@@ -12,10 +12,10 @@ class PensumsRoutes {
     }
     config() {
         this.router.get('/', pensumsController_1.default.list);
-        this.router.get('/:id', pensumsController_1.default.getOne);
+        this.router.get('/:id/:cod', pensumsController_1.default.getOne);
         this.router.post('/', pensumsController_1.default.create);
-        this.router.put('/:id', pensumsController_1.default.update);
-        this.router.delete('/:id', pensumsController_1.default.delete);
+        this.router.put('/:id/:cod', pensumsController_1.default.update);
+        this.router.delete('/:id/:cod', pensumsController_1.default.delete);
     }
 }
 const pensumsRoutes = new PensumsRoutes();

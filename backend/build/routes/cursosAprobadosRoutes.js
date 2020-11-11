@@ -12,10 +12,10 @@ class CursosAprobadosRoutes {
     }
     config() {
         this.router.get('/', cursosAprobadosController_1.default.list);
-        this.router.get('/:id', cursosAprobadosController_1.default.getOne);
+        this.router.get('/:id/:ca', cursosAprobadosController_1.default.getOne);
         this.router.post('/', cursosAprobadosController_1.default.create);
-        this.router.put('/:id', cursosAprobadosController_1.default.update);
-        this.router.delete('/:id', cursosAprobadosController_1.default.delete);
+        this.router.put('/:id/:ca', cursosAprobadosController_1.default.update);
+        this.router.delete('/:id/:ca', cursosAprobadosController_1.default.delete);
     }
 }
 const cursosAprobadosRoutes = new CursosAprobadosRoutes();

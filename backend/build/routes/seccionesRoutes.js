@@ -13,6 +13,8 @@ class SeccionesRoutes {
     config() {
         this.router.get('/', seccionesController_1.default.list);
         this.router.get('/:id', seccionesController_1.default.getOne);
+        this.router.get('/Curso/:id', seccionesController_1.default.getCurso);
+        this.router.get('/Catedratico/:id', seccionesController_1.default.getCatedratico);
         this.router.post('/', seccionesController_1.default.create);
         this.router.put('/:id', seccionesController_1.default.update);
         this.router.delete('/:id', seccionesController_1.default.delete);

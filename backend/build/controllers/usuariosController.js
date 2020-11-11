@@ -71,6 +71,24 @@ class UsuariosController {
             }
         });
     }
+    login(req, res) {
+        return __awaiter(this, void 0, void 0, function* () {
+            const { pw } = req.params;
+            const { id } = req.params;
+            const usuario = yield database_1.default.query('SELECT * FROM Usuarios WHERE Carnet = ?', [id]);
+            if (usuario.length > 0) {
+                if (usuario[0].Password == pw) {
+                    res.json({ Text: 'Datos Correctos' });
+                }
+                else {
+                    res.status(404).json({ Text: "Datos erroneos" });
+                }
+            }
+            else {
+                res.status(404).json({ Text: "El usuario no existe" });
+            }
+        });
+    }
 }
 const usuariosController = new UsuariosController();
 exports.default = usuariosController;

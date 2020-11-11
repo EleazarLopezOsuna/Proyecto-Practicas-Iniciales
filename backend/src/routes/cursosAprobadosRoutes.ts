@@ -11,10 +11,10 @@ class CursosAprobadosRoutes{
 
     config(): void{
         this.router.get('/', cursosAprobadosController.list);
-        this.router.get('/:id', cursosAprobadosController.getOne);
+        this.router.get('/:id/:ca', cursosAprobadosController.getOne);
         this.router.post('/', cursosAprobadosController.create);
-        this.router.put('/:id', cursosAprobadosController.update);
-        this.router.delete('/:id', cursosAprobadosController.delete);
+        this.router.put('/:id/:ca', cursosAprobadosController.update);
+        this.router.delete('/:id/:ca', cursosAprobadosController.delete);
     }
 }
 
