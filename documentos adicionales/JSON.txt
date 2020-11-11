@@ -73,7 +73,7 @@
 //********** SECCIONES  *********//
 //Los codigos de curso y catedratico se los proporciono cuando el cliente pide la lista de los mismos.
 {
-	"CodigoCurso": int,
+	"CodigoCurso": string(20),
 	"CodigoCatedratico": int,
 	"Seccion": string(2)
 }

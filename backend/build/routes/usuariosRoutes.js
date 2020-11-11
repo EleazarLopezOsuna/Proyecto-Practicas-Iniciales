@@ -11,11 +11,42 @@ class UsuariosRoutes {
         this.config();
     }
     config() {
+        //No hay que mandar nada, retorna JSON
         this.router.get('/', usuariosController_1.default.list);
+        /*No hay que mandar nada, retorna JSON.
+         * /:id indica que la direccion tiene que ser del tipo localhost:8000/api/Usuarios/carnet
+         */
         this.router.get('/:id', usuariosController_1.default.getOne);
+        /* Hay que mandar JSON, retorna JSON.
+         *  {
+                "Carnet": int(9),
+                "Nombres": string(64),
+                "Apellidos": string(64),
+                "Password": string(64),
+                "Correo": string(64),
+            }
+         */
         this.router.post('/', usuariosController_1.default.create);
+        /*No hay que mandar nada, retorna JSON.
+         * /:id/:pw indica que la direccion tiene que ser del tipo
+         * localhost:8000/api/Usuarios/carnet/password
+         */
         this.router.post('/:id/:pw', usuariosController_1.default.login);
+        /* Hay que mandar JSON, retorna JSON.
+         *  {
+                "Carnet": int(9),
+                "Nombres": string(64),
+                "Apellidos": string(64),
+                "Password": string(64),
+                "Correo": string(64),
+            }
+
+            /:id indica que la direccion tiene que ser del tipo localhost:8000/api/Usuarios/carnet
+         */
         this.router.put('/:id', usuariosController_1.default.update);
+        /*No hay que mandar nada, retorna JSON.
+         * /:id indica que la direccion tiene que ser del tipo localhost:8000/api/Usuarios/identificador
+         */
         this.router.delete('/:id', usuariosController_1.default.delete);
     }
 }

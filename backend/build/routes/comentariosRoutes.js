@@ -11,11 +11,40 @@ class ComentariosRoutes {
         this.config();
     }
     config() {
+        //No hay que mandar nada, retorna JSON
         this.router.get('/', comentariosController_1.default.list);
+        /* No hay que mandar nada, retorna JSON.
+         * /:id indica que la direccion tiene que ser del tipo
+         * localhost:8000/api/Comentarios/identificador
+         */
         this.router.get('/Usuario/:id', comentariosController_1.default.getUsuario);
+        /* No hay que mandar nada, retorna JSON.
+         * /:id indica que la direccion tiene que ser del tipo
+         * localhost:8000/api/Comentarios/identificador
+         */
         this.router.get('/Publicacion/:id', comentariosController_1.default.getPublicacion);
+        /* Hay que mandar JSON, retorna JSON.
+         *  {
+                "IdPublicacion": int,
+                "Carnet": int(9),
+                "Mensaje": string(256)
+            }
+         */
         this.router.post('/', comentariosController_1.default.create);
+        /* Hay que mandar JSON, retorna JSON.
+         *  {
+                "IdPublicacion": int,
+                "Carnet": int(9),
+                "Mensaje": string(256)
+            }
+
+            /:nombre/:apellido indica que la direccion tiene que ser del tipo
+            localhost:8000/api/Comentarios/identificador
+         */
         this.router.put('/:id', comentariosController_1.default.update);
+        /*No hay que mandar nada, retorna JSON.
+         * /:id indica que la direccion tiene que ser del tipo localhost:8000/api/Comentarios/identificador
+         */
         this.router.delete('/:id', comentariosController_1.default.delete);
     }
 }
