@@ -32,9 +32,6 @@ CREATE TABLE CursosAprobados
 CREATE INDEX IX_Relationship1 ON CursosAprobados (Carnet)
 ;
 
-ALTER TABLE CursosAprobados ADD PRIMARY KEY (CodigoCurso)
-;
-
 -- Table Comentarios
 
 CREATE TABLE Comentarios
