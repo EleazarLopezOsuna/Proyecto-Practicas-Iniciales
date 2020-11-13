@@ -62,6 +62,8 @@ function Datos(){
      <button type="submit"> Dejar Comentario</button> 
      <br></br>
      <button type="submit"> Ver Perfil</button> 
+     <br></br>
+     <button type="submit">Cancelar</button> 
       </form>
     </div>
     
